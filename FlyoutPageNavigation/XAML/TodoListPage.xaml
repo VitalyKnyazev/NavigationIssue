@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="FlyoutPageNavigation.TodoListPage"
+			 Title="TodoList Page">
+	<ContentPage.Content>
+		<StackLayout>
+			<Button Text="Click me" Clicked="Button_OnClicked"/>
+
+			<Label Text="When using NavigationPage after updating to XF 5.0.0.2083 (or newer) and navigating back without animation(!) previous page content is not restored." Margin="10"/>
+			<Label Text="Click 'Click me' and then 'Go back' to see the issue." Margin="10"/>
+            <Label Text="Adding package Xamarin.AndroidX.Fragment v1.2.5.5 helps, but it is just a temp workaround." Margin="10"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
